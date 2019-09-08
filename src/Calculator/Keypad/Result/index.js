@@ -11,15 +11,16 @@ class Result extends React.Component {
     }
 
     simpanAngka = angka => {
-        if (this.state.angka1 === null ) {
+
+
+
+
+        if (this.state.angka1 === null) {
             this.setState({
                 angka1: angka,
                 hasil: angka
             })
-        } else if(this.state.angka1 === null && angka === 0 ){
-             return
-        } 
-        else if (this.state.isChanged === false) {
+        } else if (this.state.isChanged === false) {
             this.setState({
                 angka1: this.state.angka1 + `${angka}`,
                 hasil: this.state.angka1 + `${angka}`
@@ -51,7 +52,7 @@ class Result extends React.Component {
         var nilai = 0;
         var angkaPertama = parseFloat(angka1);
         var angkaKedua = parseFloat(angka2);
-        
+
         if (operasi === '+') {
             nilai = angkaPertama + angkaKedua;
         } else if (operasi === '-') {
