@@ -1,5 +1,5 @@
 import React from 'react'
-import Buttons from './Result';
+import Result from './Result';
 
 class Keypad extends React.Component {
 
@@ -8,7 +8,7 @@ class Keypad extends React.Component {
     render() {
         return (
                 <div className='keypad'>
-                    <Buttons/>
+                    <Result />
                 </div>
         )
     }
