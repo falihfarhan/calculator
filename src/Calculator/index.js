@@ -1,5 +1,5 @@
 import React from 'react'
-import Keypad from './components/Keypad';
+import Keypad from './Keypad';
 
 class Calculator extends React.Component {
     render(){
